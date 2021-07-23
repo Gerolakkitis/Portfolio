@@ -1,0 +1,10 @@
+    <svg class="circle-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="17" r="15" stroke="url(#paint0_linear)" stroke-width="4"/>
+        <circle class="animate-circle" cx="17" cy="17" r="2" stroke="#FFD232" stroke-width="12"/>
+        <defs>
+        <linearGradient id="paint0_linear" x1="17" y1="0" x2="17" y2="34" gradientUnits="userSpaceOnUse">
+        <stop offset="0.9999" stop-color="#FFD232"/>
+        <stop offset="1" stop-color="#FFD232" stop-opacity="0.27"/>
+        </linearGradient>
+        </defs>
+    </svg>

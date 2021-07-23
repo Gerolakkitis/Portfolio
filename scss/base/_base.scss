@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+//Color variables
+
+$color-primary-dark: #202020;
+$color-primary-yellow: #FBFF32;
+
+$color-white: #ffffff;
+
+//Font Variables
+$font-primary: 'Poppins', sans-serif;
+
+//Font Weights
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+
+//Responsive Breakpoints
+$bp-small-phone: 320px;
+$bp-large-phone: 411px;
+$bp-small-ipad: 768px;
+$bp-large-ipad:  1024px;
+$bp-main-desktop: 1440px;
+
+
+//cursor url
+$cursor-normal: url('/assets/cursor\ yellow.svg') 15 15,auto;
+$cursor-pointer: url('/assets/cursor\ yellow\ pointer.svg') 15 15, pointer;
+// $cursor-pointer: pointer;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //10px - 1rem
+    scroll-behavior: smooth; //to scroll on screen
+}
+
+body{
+    position: relative;
+    z-index: -15;
+    font-family: $font-primary;
+    color: $color-primary-dark;
+    font-weight: $regular;
+    line-height: 1.6;
+    // cursor: url(/cursor.svg), auto;
+    cursor: $cursor-normal;
+    max-width: $bp-main-desktop; 
+    height: 100vh;;
+    margin: auto;
+    background: darken($color-primary-dark, 1%);
+}
+
+section{
+    background: $color-white;
+
+}
+
+.hidden{ 
+    display: none;
+}
+
+
+// img{
+//     width: 100%;
+//     max-height: 100%;
+//     flex-shrink: 0;
+//     border-radius: 3%;
+    
+    
+// }
+
+button{
+                        
+        background: none;
+        border: none;
+        
+        text-align: center;
+}
+
+a{
+    cursor: $cursor-pointer;
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+
+
+.contentSection{
+    position: relative;
+    z-index: -5;
+    width: 100%;
+    height: auto;
+
+    padding: 5rem 10vw ;
+}
+
+.sectionContainer{
+    
+    padding: 5rem 0;
+    width: 100%;
+    height: auto;
+    
+    .sectionTitle{
+        color: rgb(0, 0, 0);
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+@media only screen and (min-width: $bp-large-phone) {
+    .contentSection{
+        .sectionContainer{
+            .sectionTitle{
+                padding-top: .5rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .services{
+        .section03--content{
+            .flex--container--services{
+                .service--container{
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 575px) {
+    .contentSection{
+        .sectionContainer{
+            .sectionTitle{
+                font-size: 2.5rem;
+            }
+        }
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width:  $bp-small-ipad) {
+    .contentSection{
+        .sectionContainer{
+            .sectionTitle{
+                font-size: 3.3rem;
+            }
+        }
+    }
+}
+@media only screen and (min-width:  $bp-large-ipad) {
+    .contentSection{
+        .sectionContainer{
+            .sectionTitle{
+                font-size: 4.3rem;
+            }
+        }
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+
+
+@media only screen and (min-width: $bp-main-desktop) {
+    .contentSection{
+        padding: 5rem 14.2rem;
+    }
+}

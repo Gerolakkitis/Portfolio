@@ -1,0 +1,272 @@
+//set max-width for the page
+.welcomePage{
+    
+    width: 100%;
+    
+    position: relative;
+    z-index: 1;
+    //header-background-top
+    .background--top{
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -10;
+        width: 100%;
+        height: auto;
+        svg{
+            width: 100%;
+            max-height: 68rem;
+        }
+    }
+
+
+
+    .section01--content{
+        padding: 2rem 10vw 0 ;
+        min-height: 30rem;
+        .welcome--content{
+        padding-top: 5.5rem;
+        width: 100%;
+        height: auto;
+        line-height: 1.35rem;
+        position: relative;
+        
+        color: $color-white;
+
+        .author{
+            font-size: 1.1rem;
+            &--name{
+                font-weight: $light;
+            }
+            &--info{
+                font-weight: $semibold;
+                font-size: 1.6rem;
+            }
+        }
+        .female--laptopIcon{
+            position: absolute;
+            padding-top: 5.5rem;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            width: 33%;
+            height: auto;
+            z-index: -1;
+             &--svg{
+                 
+                max-width: 127px;
+                
+                max-height: 185px;
+            }
+         }
+        .decorative--line{
+            position: relative;
+            // top: 6.1rem;
+            // left: -1.15rem;
+            margin: 0 -5vw;
+            width: 85%;
+            z-index: -2;
+            &--svg{
+                width: 110%;
+                height: auto;
+            }
+        }
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-large-phone){
+    .welcomePage{
+       
+        .section01--content{
+            min-height: 39rem;
+            padding: 3rem 10vw 0 ;
+            .welcome--content{
+                padding-top: 6.8rem;
+                line-height: 1.45rem;
+                .author{
+                    font-size: 1.6rem;
+                    &--info{
+                        font-size: 1.8rem;
+                    }
+                }
+                .female--laptopIcon{
+                    width: 40%;
+                    height: auto;
+                    &--svg{
+                        max-width: 282px;
+                        max-height: 412px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media only screen and (min-width: 550px){
+    .welcomePage{
+        
+        .section01--content{
+            min-height: 45rem;
+            padding: 5rem 10vw 0 ;
+            .welcome--content{
+                padding-top: 8.0rem;
+                line-height: 2.1rem;
+                .author{
+                    font-size: 2rem;
+                    &--info{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 650px){
+    .welcomePage{
+        .section01--content{
+        min-height: 54rem;
+        padding: 9rem 10vw 0 ;
+        }
+        }
+    }
+
+@media only screen and (min-width: $bp-small-ipad){
+    .welcomePage{
+       
+        .section01--content{
+            min-height:65rem;
+            .welcome--content{
+                padding-top: 10rem;
+                line-height: 2.9rem;
+                .author{
+                    padding-bottom: 2rem;
+                    font-size: 2.3rem;
+                    &--info{
+                        font-size: 3.3rem;
+                    }
+                }
+                .decorative--line{
+                    margin: 0 5vw 0 -5vw;
+                    width: 85%;
+                    z-index: -2;
+                    &--svg{
+                        max-width: 56rem;
+                        height: auto;
+                    }
+                }
+                .female--laptopIcon{
+                    width: 45%;
+                     &--svg{
+                        max-width: 317px;
+                        max-height: 463px;
+                    }
+                 }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .welcomePage{
+        min-height: 74rem;
+        
+        }
+    }
+
+@media only screen and (min-width: 885px){
+    .welcomePage{
+        .section01--content{
+            .welcome--content{
+                padding-top: 13rem;
+                line-height: 2.9rem;
+                .author{
+                    padding-bottom: 0;
+                    
+                    &--info{
+                        font-size: 3.3rem;
+                    }
+                }
+                .decorative--line{
+                    margin: 0 5vw 0 -5vw;
+                    width: 85%;
+                    z-index: -2;
+                    &--svg{
+                        max-width: 56rem;
+                        height: auto;
+                    }
+                }
+                .female--laptopIcon{
+                    width: 45%;
+                     &--svg{
+                        max-width: 317px;
+                        max-height: 463px;
+                    }
+                 }
+            }
+
+        }
+    }
+}
+
+ @media only screen and (min-width: $bp-large-ipad){
+    .background--top{
+        svg{
+            .scroll--icon{
+                stroke-width: 0.5;
+                width: 8px;
+            }
+            .moving--element{
+                width: 2px;      
+            }
+        }
+    }
+    .welcomePage{
+        .section01--content{
+            .welcome--content{
+                padding-top: 16.5rem;
+                .author{
+                    line-height: 3.2rem;
+                   
+                    &--info{
+                        font-size: 4rem;
+                    }
+                }
+                .decorative--line{
+                    margin: 0 5vw 0 -5vw;
+                    width: 85%;
+                    z-index: -2;
+                    
+                    &--svg{
+                        max-width: 76rem;
+                        height: auto;
+                    }
+                }
+                .female--laptopIcon{
+                    width: 55%;
+                     &--svg{
+                        max-width: 356px;
+                        max-height: 523px;
+                    }
+                 }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-main-desktop) {
+    .welcomePage .section01--content {
+        padding: 10rem 14.2rem;
+        .welcome--content{
+            .decorative--line{
+                position: relative;
+                margin: 0 -7rem;
+
+            }
+        }
+      }
+}

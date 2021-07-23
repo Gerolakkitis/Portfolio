@@ -1,0 +1,76 @@
+.moving--element{
+    animation-name: move-vertically-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-vertically-down{
+    0%{
+       transform: translateY(0); 
+       opacity: 1;
+    }
+    5%{
+        opacity: .9;
+    }
+    20%{
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateY(.6rem);
+        opacity: 0;
+    }
+}
+
+
+.animate-circle{
+    animation-name: animatePointer;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animatePointer{
+    0%{
+        stroke-width: 0;
+    }
+    50%{
+        stroke-width: 19;
+    }
+    100%{
+        stroke-width: 0;
+    }
+}
+
+@keyframes serviceIcons{
+    0%{
+        transform:rotate(0deg);
+    }
+    11%{
+        transform:rotate(1deg);
+    }
+    22%{
+        transform:rotate(2deg);
+    }
+    33%{
+        transform:rotate(3deg);
+    }
+    44%{
+        transform:rotate(1deg);
+    }
+    55%{
+        transform:rotate(-1deg);
+    }
+    66%{
+        transform:rotate(-3deg);
+    }
+    77%{
+        transform:rotate(-2deg);
+    }
+    88%{
+        transform:rotate(-1deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+
+
